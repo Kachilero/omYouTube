@@ -8,7 +8,7 @@ import android.net.Uri;
 import org.json.JSONArray;
 import org.json.JSONException;
 
-import com.alejandro.omYouTube.OpenYouTubePlayerActivity;
+//import com.alejandro.omYouTube.OpenYouTubePlayerActivity;
 
 public class YoutubeVideoPlayer extends CordovaPlugin {
     @Override
