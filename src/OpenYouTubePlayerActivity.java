@@ -17,6 +17,8 @@ import android.util.TypedValue;
 import android.view.*;
 import android.widget.*;
 
+import com.alejandro.omYouTube.*;
+
 public class OpenYouTubePlayerActivity extends Activity {
 
     public static final String SCHEME_YOUTUBE_VIDEO = "ytv";
