@@ -23,7 +23,7 @@ public class YoutubeVideoPlayer extends CordovaPlugin {
 
     private void openVideo(String vid, CallbackContext callbackContext){
 
-        Intent intent = new Intent(null, Uri.parse("ytv://"+vid), this.cordova.getActivity(), OpenYouTubePlayerActivity.class);
+        Intent intent = new Intent(null, Uri.parse("ytv://"+vid), this.cordova.getActivity(), com.alejandro.omYouTube.OpenYouTubePlayerActivity.java);
         this.cordova.getActivity().startActivity(intent);
     }
 }
