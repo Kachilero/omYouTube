@@ -27,13 +27,18 @@
             </feature>
         </config-file>
 
-        <config-file target="AndroidManifest.xml" parent="/*">
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
             <uses-permission android:name="android.permission.INTERNET" />
+        </config-file>
+
+        <config-file target="AndroidManifes.xml" parent="/manifest/application">
+            <activity android:name="com.alejandro.omYouTube.YoutubeVideoPlayer" android:screenOrientation="landscape" />
         </config-file>
 
 
         <!-- This is not correct TODO ALEJANDRO -->
-        <source-file src="src/com.alejandro.omYouTube/YoutubeVideoPlayer.java" target-dir="src/com/alejandro/omYouTube" />
+        <source-file src="src/com/alejandro/omYouTube/YoutubeVideoPlayer.java" target-dir="src/com/alejandro/omYouTube" />
     </platform>
 
 </plugin>
