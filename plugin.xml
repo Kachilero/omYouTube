@@ -13,7 +13,7 @@
     <license>MIT</license>
 
     <feature name="YoutubeVideoPlayer">
-        <param name="android-package" value="com.alejandro.omYouTube.YoutubeVideoPlayer" />
+        <param name="android-package" value="com.alejandro.omYouTube" />
     </feature>
 
     <js-module src="www/YoutubeVideoPlayer.js" name="YoutubeVideoPlayer">
@@ -21,7 +21,7 @@
     </js-module>
 
     <platform name="android">
-        <config-file target="res/xml/config.xml" parent="/*">
+        <config-file target="res/xml/config.xml" parent="widget">
             <feature name="YoutubeVideoPlayer">
                 <param name="android-package" value="com.alejandro.omYouTube" />
             </feature>
@@ -32,13 +32,13 @@
             <uses-permission android:name="android.permission.INTERNET" />
         </config-file>
 
-        <config-file target="AndroidManifes.xml" parent="/manifest/application">
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
             <activity android:name="com.alejandro.omYouTube.YoutubeVideoPlayer" android:screenOrientation="landscape" />
         </config-file>
 
 
         <!-- This is not correct TODO ALEJANDRO -->
-        <source-file src="src/com.alejandro.omYouTube/YoutubeVideoPlayer.java" target-dir="src/com/alejandro/omYouTube" />
+        <source-file src="src/com/alejandro/omYouTube/YoutubeVideoPlayer.java" target-dir="src/com/alejandro/omYouTube" />
     </platform>
 
 </plugin>
