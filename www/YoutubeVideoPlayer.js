@@ -4,17 +4,21 @@
 
 var exec = require('cordova/exec');
 
-YoutubeVideoPlayer = {
-  openVideo: function(url){
-    exec(function(result){
-      console.log("VideoPlayer Success Function: " + result);
-    }, function(err){
-      console.log("VideoPlayer Error Function: " + err);
-    }, "YoutubeVideoPlayer",
-    "openVideo",
-    [YTid]
-    );
-  }
+/**Declares the empty function*/
+function YoutubeVideoPlayer() {}
+
+/**Extends the prototype to include openVideo*/
+YoutubeVideoPlayer.prototype.openVideo = function(YTid){
+  exec(function (result) {
+    console.log(result);
+  },function(err){
+    console.log("There was an error executing YouTube plugin: ");
+    console.error(err);
+  },
+  "YoutubeVideoPlayer",
+  "openVideo",
+  [YTid]
+  );
 };
 
 var YoutubeVideoPlayer = new YoutubeVideoPlayer();
