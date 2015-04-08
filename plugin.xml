@@ -38,7 +38,7 @@
 
 
         <!-- This is not correct TODO ALEJANDRO -->
-        <source-file src="src/com/alejandro/omYouTube/YoutubeVideoPlayer.java" target-dir="src/com/alejandro/omYouTube" />
+        <source-file src="src/com.alejandro.omYouTube/YoutubeVideoPlayer.java" target-dir="src/com/alejandro/omYouTube" />
     </platform>
 
 </plugin>
